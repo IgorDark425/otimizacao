@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações de Desempenho no Windows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0078d4;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #e1e1e1;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .title {
+            font-weight: bold;
+            color: #2a2a2a;
+        }
+        .desc {
+            color: #555;
+        }
+        .highlight {
+            color: #0078d4;
+            font-weight: bold;
+        }
+        .steps {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #0078d4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Configurações de Desempenho no Windows</h1>
+        <h1>Ao clicar em um dos botões da página, você será direcionado para a configuração correspondente.</h1>
+        <ul>
+            <li>
+                <span class="title">1. Ative o Modo de Jogo</span><br>
+                <span class="desc">Ajuste o sistema para priorizar o desempenho dos jogos.</span>
+                <div class="steps">
+                    <p><span class="highlight">Passos:</span> Vá para <strong>Configurações</strong> > <strong>Jogos</strong> > <strong>Modo de Jogo</strong> e ative a opção.</p>
+                    <a href="ms-settings:gaming-gamemode" class="button">Abrir Modo de Jogo</a>
+                </div>
+            </li>
+            <li>
+                <span class="title">2. Avançado - Configuração</span><br>
+                <span class="desc">Clique em <span class="highlight">Ajustar para obter um melhor desempenho</span>.</span>
+                <div class="steps">
+                    <p><span class="highlight">Passos:</span> Vá para <strong>Configurações</strong> > <strong>Sistema</strong> > <strong>Sobre</strong> > <strong>Configurações Avançadas do Sistema</strong>. No painel de Propriedades do Sistema, clique em <strong>Configurações</strong> sob <strong>Desempenho</strong> e selecione <strong>Ajustar para obter um melhor desempenho</strong>.</p>
+                    <a href="ms-settings:system-performance" class="button">Abrir Configurações Avançadas</a>
+                </div>
+            </li>
+            <li>
+                <span class="title">3. Configuração Xbox</span><br>
+                <span class="desc">Desative a Xbox Game Bar e desmarque a opção <span class="highlight">Permitir que seu controle abra a Xbox Game Bar</span>.</span>
+                <div class="steps">
+                    <p><span class="highlight">Passos:</span> Vá para <strong>Configurações</strong> > <strong>Jogos</strong> > <strong>Xbox Game Bar</strong> e desative as opções relacionadas ao controle e à Game Bar.</p>
+                    <a href="ms-settings:gaming-xboxgamebar" class="button">Abrir Xbox Game Bar</a>
+                </div>
+            </li>
+            <li>
+                <span class="title">4. Desabilitar o Timer de Eventos de Alta Precisão</span><br>
+                <span class="desc">Desative esta função para melhorar o desempenho geral.</span>
+                <div class="steps">
+                    <p><span class="highlight">Passos:</span> Abra o <strong>Editor de Registro</strong> (pressione <strong>Win + R</strong>, digite <strong>regedit</strong> e pressione Enter). Navegue até <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile</strong> e altere o valor de <strong>SystemResponsiveness</strong> para <strong>0</strong>.</p>
+                </div>
+            </li>
+            <li>
+                <span class="title">5. Desativar Efeitos de Transparência</span><br>
+                <span class="desc">A desativação dos efeitos de transparência pode melhorar o desempenho do sistema.</span>
+                <div class="steps">
+                    <p><span class="highlight">Passos:</span> Vá para <strong>Configurações</strong> > <strong>Personalização</strong> > <strong>Transparência</strong> e desative a opção de efeitos de transparência.</p>
+                    <a href="ms-settings:personalization-effects" class="button">Abrir Efeitos de Transparência</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
